@@ -17,7 +17,12 @@ _logger = logging.getLogger(__name__)
 class PaymentAcquirerHesabe(models.Model):
     _inherit = 'payment.acquirer'
 
-    provider = fields.Selection(selection_add=[('hesabe_knet', 'Hesabe KNET'), ('hesabe_mpgs', 'Hesabe MPGS')])
+    provider = fields.Selection(selection_add=
+                                [
+                                    ('hesabe_knet', 'Hesabe KNET'), 
+                                    ('hesabe_mpgs', 'Hesabe MPGS')], 
+                                    ondelete={'hesabe_knet': 'set default', 'hesabe_mpgs': 'set default'})
+    
     secret_key = fields.Char(groups='base.group_user')
     merchant_code = fields.Char(groups='base.group_user')
     access_code = fields.Char(groups='base.group_user')
