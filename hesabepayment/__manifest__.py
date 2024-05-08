@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+{
+    'name': 'Payment Provider: Hesabe Payment',
+    'author': "Hesabe",
+    'website': "https://developer.hesabe.com/docs/2.0/kits/odoo",
+    'version': '17.0.0.0.1',
+    'price': 49.99,
+    'currency': 'USD',
+    'sequence': -97,
+    'maintainer' : 'Hesabe Tech Team',
+    'category': 'Accounting/Payment Providers',
+    'summary': 'Payment Acquirer: Hesabe Implementation',
+    'description': """Hesabe Payment Gateway for Odoo 17.0""",
+    'company': 'Hesabe Company for Electronic Payments & Settlements',
+    'depends': ['payment'],
+    'data': [
+        #'security/ir.model.access.csv',
+    'views/payment_hesabe_template.xml',
+    'views/payment_views.xml',
+    'data/payment_method_data.xml',        
+    'data/payment_provider_data.xml',
+    ],
+    'images': ['static/description/Banner.PNG'],
+    'post_init_hook': 'post_init_hook',
+    'uninstall_hook': 'uninstall_hook',
+    'license': 'LGPL-3',
+}
