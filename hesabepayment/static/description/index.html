@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesabe Payment Gateway - Setup Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="main-container-description-page">
+    <div class="header fade-in">
+        <h1>Hesabe Payment Gateway</h1>
+        <p>Complete setup guide for integrating Hesabe Payment Gateway into your system</p>
+    </div>
+
+    <!--        <img src="Banner.PNG" alt="Hesabe Payment Gateway Banner" class="banner-image fade-in">-->
+
+    <div class="warning-card fade-in">
+        <h3>⚠️ Important Notice</h3>
+        <p>This plugin is not allowed for sale. We encourage our merchants to report any unauthorized sales. Hesabe will
+            take serious actions against violations.</p>
+    </div>
+
+    <div class="step-card fade-in">
+        <span class="step-number">1</span>
+        <h2 class="step-title">Configuration</h2>
+        <p class="step-description">
+            After installing the Hesabe Payment plugin, click on the menu in the top right corner and select "Website".
+            When the page loads, you'll see a menu at the top. Click on "Configuration" as shown in the image below.
+        </p>
+        <img src="banner0.png" alt="Configuration Step" class="step-image">
+    </div>
+
+    <div class="step-card fade-in">
+        <span class="step-number">2</span>
+        <h2 class="step-title">Payment Acquirer</h2>
+        <p class="step-description">
+            Once the dropdown appears, look for "Payment Acquirer" and click on it. Find the highlighted section in the
+            image below. When you click it, a menu will appear that includes the HESABE payment gateway plugin.
+        </p>
+        <img src="banner01.png" alt="Payment Acquirer Step" class="step-image">
+    </div>
+
+    <div class="step-card fade-in">
+        <span class="step-number">3</span>
+        <h2 class="step-title">Plugin Activation</h2>
+        <p class="step-description">
+            After the page loads, refer to the image below to activate the plugin. Make sure to follow the highlighted
+            areas for proper activation.
+        </p>
+        <img src="banner02.png" alt="Plugin Activation Step" class="step-image">
+    </div>
+
+    <div class="step-card fade-in">
+        <span class="step-number">4</span>
+        <h2 class="step-title">Test Mode Configuration</h2>
+        <p class="step-description">
+            Please ensure that test credentials are properly configured before proceeding. This allows you to test
+            transactions safely without processing real payments.
+        </p>
+        <img src="banner1.png" alt="Test Mode Configuration" class="step-image">
+    </div>
+
+    <div class="step-card fade-in">
+        <span class="step-number">5</span>
+        <h2 class="step-title">Live Mode Setup</h2>
+        <p class="step-description">
+            Please ensure that production credentials are configured before enabling live mode. This step is crucial for
+            processing real transactions.
+        </p>
+        <img src="banner2.png" alt="Live Mode Setup" class="step-image">
+        <div class="contact-info">
+            <p>Need help with live credentials? Contact us at <a href="mailto:support@hesabe.com">support@hesabe.com</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="step-card fade-in">
+        <span class="step-number">6</span>
+        <h2 class="step-title">Disable Plugin</h2>
+        <p class="step-description">
+            To disable the plugin, simply click on the disable radio button and save your changes. This will deactivate
+            the payment gateway.
+        </p>
+        <img src="banner3.png" alt="Disable Plugin Step" class="step-image">
+    </div>
+
+
+    <div class="footer fade-in">
+        <p>&copy; 2024 Hesabe Payment Gateway. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    console.log("script loaded");
+    // Add smooth scrolling and fade-in animations
+    document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all step cards
+        document.querySelectorAll('.step-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    });
+</script>
+</body>
+</html>

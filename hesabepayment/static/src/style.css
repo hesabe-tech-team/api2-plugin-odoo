@@ -1,0 +1,227 @@
+/* latin-ext */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v16/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v16/rP2Fp2ywxg089UriCZa4Hz-D.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v16/rP2Hp2ywxg089UriCZ2IHSeH.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v16/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.main-container-description-page {
+    h1, h2, h3, p {
+        font-family: "DM Sans", sans-serif;
+    }
+
+    font-family: "DM Sans", sans-serif;
+
+    .header {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding: 40px 20px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        border: 1px solid gray;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+        color: #001b60;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .header p {
+        font-size: 1.1rem;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .banner-image {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        margin: 20px auto;
+        display: block;
+    }
+
+    .step-card {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        padding: 30px;
+        margin: 30px 0;
+        border: 1px solid gray;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    .step-number {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #001b60;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-weight: bold;
+        margin-right: 15px;
+        font-size: 1.2rem;
+    }
+
+    .step-title {
+        display: inline-block;
+        font-size: 1.8rem;
+        color: #001b60;
+        font-weight: 600;
+        margin-bottom: 15px;
+        vertical-align: top;
+        margin-top: 5px;
+    }
+
+    .step-description {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.7;
+    }
+
+    .step-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+        transition: transform 0.3s ease;
+    }
+
+
+    .warning-card {
+        background: #ff9a9e;
+        border-left: 5px solid #e74c3c;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 30px 0;
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.2);
+    }
+
+    .warning-card h3 {
+        color: #c0392b;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+    }
+
+    .warning-card p {
+        color: #8b2635;
+        font-weight: 500;
+    }
+
+    .contact-info {
+        color: #e7f4ff;
+        background: linear-gradient(135deg, #001b60 0%, #091532 100%);
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+        margin: 30px 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info a {
+
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+
+
+    .footer {
+        text-align: center;
+        padding: 40px 20px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        margin-top: 40px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer p {
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .step-card {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .step-title {
+            font-size: 1.5rem;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .step-number {
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
