@@ -6,7 +6,7 @@
     'category': 'Accounting/Payment Providers',
     'author': "Hesabe Company for Electronic Payments & Settlements ",
     'depends': ['payment'],
-    'website': "https://developer.hesabe.com/docs/odoo-18",
+    'website': "https://developer.hesabe.com/docs/Odoo-Latest",
     'version': '0.0.1',
     'price': 49.99,
     'currency': 'USD',
